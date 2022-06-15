@@ -29,6 +29,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">experience</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#form">Contact</a></li>
                     </ul>
@@ -37,12 +38,23 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead">
+             <div id="star"></div>
+             <script>
+                var shadow = '150px 150px #fff';
+                for (let i = 0; i < 300; i++) {
+                    var x = Math.floor(Math.random() * (1920 - 1 + 1) + 1)
+                    var y = Math.floor(Math.random() * (1000 - 1 + 1) + 1)
+                    shadow = shadow + ',' + x + "px " + y + "px " + "#fff";
+                }
+                document.getElementById("star").style.boxShadow = shadow;
+             </script>
+             <div class="meteor"></div>
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h3 class="text-white-50 mx-auto mt-2 mb-0">Hi, my name is</h3>
+                    <div class="text-start" id="intro-text">
+                        <h3 class="text-white-50 mx-auto mt-2 ps-1 mb-0">Hi, my name is</h3>
                         <h1 class="text-white mx-auto my-0 text-uppercase">Eliano</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Junior .NET developer</h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5 ps-1">Junior .NET developer</h2>
                     </div>
                 </div>
             </div>
@@ -97,7 +109,7 @@
                     </div>
                     <!-- experience-->
                     <div class="row gap-5 justify-content-center text-white">
-                        <div class="col-10 col-md-8 col-lg-5 mb-5 experience-section">
+                        <div class="col-10 col-md-8 col-lg-5 mb-5 experience-section" id="experience">
                             <h2 class="text-white text-center mb-4">experience</h2>
                             <ul class="timeline education">
                                 <li class="event" data-date="09/2021-12/2021">
@@ -189,7 +201,7 @@
                 </div>
             </div>
         </section>
-        <!-- Signup-->
+        <!-- contact-->
         <section class="signup-section" id="form">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
@@ -204,11 +216,29 @@
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- name input-->
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Enter first name...">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Enter last name...">
+                                </div>
+                            </div>
+
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
                                 <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
                                 <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
                             </div>
+
+                             <!-- message input-->
+                             <div class="row">
+                                <div class="col">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Enter message..."></textarea>
+                                </div>
+                            </div>
+
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
                             <!-- Submit success message-->
@@ -243,7 +273,7 @@
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Address</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <div class="small text-black-50">Nieuwpoortstraat 174, 9160 Lokeren</div>
                             </div>
                         </div>
                     </div>
@@ -253,7 +283,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+                                <div class="small text-black-50"><a href="#!">eliano.verkimpe@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -263,7 +293,7 @@
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Phone</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                                <div class="small text-black-50">04 79 31 65 10</div>
                             </div>
                         </div>
                     </div>
