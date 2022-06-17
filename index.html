@@ -56,8 +56,8 @@
         </script>
         <div class="meteor"></div>
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-            <div class="d-flex justify-content-center">
-                <div class="text-start" id="intro-text">
+            <div class="d-flex justify-content-center" id="animation-wrapper">
+                <div class="text-center" id="intro-text">
                     <h3 class="text-white-50 mx-auto mt-2 ps-1 mb-0">Hi, my name is</h3>
                     <h1 class="text-white mx-auto my-0 text-uppercase">Eliano</h1>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5 ps-1">Junior .NET developer</h2>
@@ -75,7 +75,7 @@
                     <div class="col-12 col-sm-8 col-lg-4">
                         <div class="d-flex flex-column justify-content-center">
                             <div>
-                                <img class="img-fluid profile-pic py-4" src="/assets/img/profilepic.jpg"
+                                <img class="img-fluid profile-pic py-4 text-white" src="/assets/img/profilepic.jpg"
                                     alt="a profile picture of Eliano Verkimpe">
                             </div>
 
@@ -194,12 +194,31 @@
             <!-- Project One Row-->
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                 <h2 class="text-center mb-5">Projects</h2>
-
+                
                 <div class="col-md-6 col-lg-4">
                     <div class="card rounded">
-                        <img class="card-img-top rounded-top" src="/assets/img/milkyway.png" alt="Card image cap">
+                        <img class="card-img-top rounded-top" src="/assets/txt2graph/Screenshot_1.png" alt="Card image cap">
                         <div class="card-img-overlay">
-                            <h5 class="card-title text-white">WindowsMediaPlayer</h5>
+                            <h5 class="card-title text-dark fw-bold">txt2graph</h5>
+                            <a href="#modaltxt2graph" data-bs-toggle="modal"><i class="icon fa-solid fa-expand"></i></a>
+                            <a href="" target="_blank"><i class="icon fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">A small data vizualization project used in my internship. </p>
+                        </div>
+                        <div class="card-footer d-flex gap-3 flex-wrap">
+                            <p class="tag">Python</p>
+                            <p class="tag">Pycharm</p>
+                            <p class="tag">Data vizualization</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded">
+                        <img class="card-img-top rounded-top" src="/assets/windowsmediaplayer/Screenshot_2.png" alt="Card image cap">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title text-dark fw-bold">WindowsMediaPlayer</h5>
                             <a href="#modalMediaPlayer" data-bs-toggle="modal"><i class="icon fa-solid fa-expand"></i></a>
                             <a href="https://github.com/E-Verkimpe/Project-MusicPlayer-Eliano-Verkimpe" target="_blank"><i class="icon fa-brands fa-github"></i></a>
                         </div>
@@ -222,27 +241,7 @@
                     <div class="card rounded">
                         <img class="card-img-top rounded-top" src="/assets/img/milkyway.png" alt="Card image cap">
                         <div class="card-img-overlay">
-                            <h5 class="card-title text-white">Card title</h5>
-                            <a href="#modal2" data-bs-toggle="modal"><i class="icon fa-solid fa-expand"></i></a>
-                            <a href="" target="_blank"><i class="icon fa-brands fa-github"></i></a>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                        <div class="card-footer d-flex gap-3 flex-wrap">
-                            <p class="tag">c#</p>
-                            <p class="tag">Visual Studio</p>
-                            <p class="tag">Console app</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card rounded">
-                        <img class="card-img-top rounded-top" src="/assets/img/milkyway.png" alt="Card image cap">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title text-white">Card title</h5>
+                            <h5 class="card-title text-dark fw-bold">Card title</h5>
                             <a href="#modal3" data-bs-toggle="modal"><i class="icon fa-solid fa-expand"></i></a>
                             <a href="" target="_blank"><i class="icon fa-brands fa-github"></i></a>
                         </div>
@@ -262,6 +261,22 @@
     </section>
 
     <!-- modal1 -->
+    <div class="modal fade" id="modaltxt2graph" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">txt2graph</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="/assets/txt2graph/Screenshot_1.png" alt="ing-project1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal2 -->
     <div class="modal fade" id="modalMediaPlayer" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -271,23 +286,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img class="img-fluid" src="/assets/img/milkyway.png" alt="ing-project1">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- modal2 -->
-    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Project 2</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img class="img-fluid" src="/assets/img/milkyway.png" alt="ing-project1">
+                    <img class="img-fluid" src="/assets/windowsmediaplayer/Screenshot_2.png" alt="ing-project1">
                 </div>
             </div>
         </div>

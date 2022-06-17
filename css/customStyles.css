@@ -8,7 +8,6 @@
 /* TODO
 -link to lindin
 -link to cv.pdf
--project cards
 -contact form responsive
 -make the form work? */
 
@@ -60,13 +59,13 @@
     }
 }
 
-.icon{
+.icon {
     padding: 1rem;
     font-size: xx-large;
     color: gray;
 }
 
-.icon:hover{
+.icon:hover {
     color: white;
 }
 
@@ -77,26 +76,26 @@
 
 .card {
     margin: 1rem;
-    height: 25rem;
+    height: 30rem;
 }
 
-.card .icon{
+.card .icon {
     padding: 0.5rem;
-    color: white;
+    color: black;
 }
 
-.card .icon:hover{
+.card .icon:hover {
     color: var(--accent-color);
 }
 
-.tag{
+.tag {
     background-color: var(--accent-color);
     padding: 0 0.5rem;
     margin-bottom: 0.5rem;
     border-radius: .5rem;
 }
 
-.form-control{
+.form-control {
     margin-bottom: 1rem;
 }
 
@@ -250,41 +249,32 @@ small {
 
 @keyframes meteor {
     0% {
-      opacity: 1;
-      margin-top: -20vw;
-      margin-left: -20vw;
-    }
-    
-    100% {
-      margin-top: 110vw;
-      margin-left: 120vw;
-      opacity: 0;
-    }
-  }
-
-  #intro-text{
-    position: absolute;
-    top: 35%;
-    width: auto;
-    animation: appear 500ms 1150ms linear backwards;
-    overflow: hidden;
-  }
-
-
-@keyframes appear{
-    0%{
-        top: -50%;
-        left: -50%;
-        opacity: 0;
-    }
-
-    10%{
-        top: 35%;
-        left: auto;
-        opacity: 0;
-    }
-
-    100%{
         opacity: 1;
+        margin-top: -20vw;
+        margin-left: -20vw;
+    }
+
+    100% {
+        margin-top: 110vw;
+        margin-left: 120vw;
+        opacity: 0;
+    }
+}
+
+#animation-wrapper {
+    overflow: hidden;
+}
+
+#intro-text { 
+    animation: slide 350ms 1100ms ease-in backwards;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
     }
 }
