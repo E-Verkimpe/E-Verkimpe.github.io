@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Eliano Verkimpe - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/customStyles.css">
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Home</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#personal">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#form">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div id="star"></div>
+        <script>
+            var shadow = '150px 150px #fff';
+            for (let i = 0; i < 300; i++) {
+                var x = Math.floor(Math.random() * (1920 - 1 + 1) + 1)
+                var y = Math.floor(Math.random() * (1000 - 1 + 1) + 1)
+                shadow = shadow + ',' + x + "px " + y + "px " + "#fff";
+            }
+            document.getElementById("star").style.boxShadow = shadow;
+        </script>
+        <div class="meteor"></div>
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center" id="animation-wrapper">
+                <div class="text-center" id="intro-text">
+                    <h3 class="text-white-50 mx-auto mt-2 ps-1 mb-0">Hi, my name is</h3>
+                    <h1 class="text-white mx-auto my-0 text-uppercase">Eliano</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5 ps-1">.NET developer</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Personal-->
+    <section class="personal-section text-center" id="personal">
+        <div class="container px-2 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center align-items-center">
+                <!-- About-->
+                <div class="row justify-content-center align-items-center about-section" id="about">
+                    <h2 class="text-white text-center mb-4">About me</h2>
+                    <div class="col-12 col-sm-8 col-lg-4">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div>
+                                <img class="img-fluid profile-pic py-4 text-white" src="/assets/img/profilepic.jpg"
+                                    alt="a profile picture of Eliano Verkimpe">
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <a href="https://www.linkedin.com/in/eliano-verkimpe-617844242/" target="_blank"><i class="icon fa-brands fa-linkedin"></i></a>
+
+                                <a href="https://github.com/E-Verkimpe" target="_blank"><i class="icon fa-brands fa-github"></i><a>
+
+                                <a href="/assets/CV.pdf" target="_blank"><i class="icon fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column align-items-center col-10 col-lg-6">
+                        <p class="mb-4 text-white-50">
+                            I've been interested in science and technology since a young age. Born into a technical family, I started an elektromechanics education. Near the end of my bachelor's degree I realized that it wasn't what i wanted to do for the rest of my life. But I'd done some basic programming during my education. So after finishing my degree I started a .Net course.
+                        </p>
+
+                        <p class="mb-4 text-white-50">
+                            I would describe myself as a teamplayer, who would rather encourage other peoples ideas instead of taking the lead. I work organized and precise, to complete every project to a high standard. 
+                        </p>
+
+                        <p class="mb-4 text-white-50">
+                            In my free time I like to go on hikes trough the woods, accompanied by my dog or my friends. Other times I usually play some video games while listening to music. In august 2020 I bought a telescope and started astronomy as a side hobby.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- skills-->
+                <div class="text-start col-10 col-lg-8 mb-5 skills-section" id="skills">
+                    <h2 class="text-white text-center mb-4">Skills</h2>
+
+                    <small>c#</small>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+
+                    <small>databases (SQL)</small>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+
+                    <small>html & css</small>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+
+                </div>
+                <!-- experience-->
+                <div class="row gap-5 justify-content-center text-white">
+                    <div class="col-10 col-md-8 col-lg-5 mb-5 experience-section" id="experience">
+                        <h2 class="text-white text-center mb-4">experience</h2>
+                        <ul class="timeline experience">
+                            <li class="event" data-date="09/2021-12/2021">
+                                <h3>internship production/engineering</h3>
+                                <small>Brady, Zele (België)</small>
+                                <p>
+                                    -Onderzoek op productielijn van RFID-tags om mogelijkheden waste besparing te
+                                    bekijken
+                                </p>
+                            </li>
+                            <li class="event" data-date="02/2019–05/2019">
+                                <h3>Service technician</h3>
+                                <small>Checkmade, Zele (België)</small>
+                                <p>
+                                    Installation and maintenance of parking management and access control applications
+                                </p>
+                            </li>
+                            <li class="event" data-date="2015-2016">
+                                <h3>Machine operator</h3>
+                                <small>Moss Composites, Lokeren (België)</small>
+                                <p>
+                                    -operating of CNC-machine <br>
+                                    -finishing products
+                                </p>
+                            </li>
+                    </div>
+                    <!-- education-->
+                    <div class="col-10 col-md-8 col-lg-5 mb-5 education-section">
+                        <h2 class="text-white text-center mb-4">education</h2>
+                        <ul class="timeline education">
+                            <li class="event" data-date="04/2022-current">
+                                <h3>.NET C# Course VDAB</h3>
+                                <p><small>c# - SQL - HTML/CSS</small></p>
+                            </li>
+                            <li class="event" data-date="09/2016–02/2022">
+                                <h3>Bachelor elektromechanics - automation</h3>
+                                <p><small>Hogeschool Gent, Gent (België)</small> </p>
+                            </li>
+                            <li class="event" data-date="09/2014–06/2016">
+                                <h3>TSO electromechanics</h3>
+                                <p><small>VTI Sint-Laurentius, Lokeren (België)</small></p>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="projects">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mb-5">Projects</h2>
+            <!-- Project One Row-->
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                
+                <div class="col-md-6 col-lg-4 pb-3">
+                    <div class="card card-custom rounded">
+                        <img class="card-img-top card-custom-img rounded-top" src="/assets/txt2graph/Screenshot_1.png" alt="Card image cap">
+                        
+                        <div class="card-body" style="overflow-y: auto">
+                            <h5 class="card-title text-dark fw-bold">txt2graph</h5>
+                            <p class="card-text">A small data visualization project used in my internship. Written in Python, used to visualize the deviation of a group of measurements</p>
+                            
+                        </div>
+                        <div class="card-footer d-flex flex-wrap">
+                            <a href="#modaltxt2graph" data-bs-toggle="modal"><i class="icon fa-solid fa-expand"></i></a>
+
+                            <a href="" target="_blank"><i class="icon fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 pb-3">
+                    <div class="card card-custom rounded">
+                        <img class="card-img-top rounded-top" src="/assets/windowsmediaplayer/Screenshot_2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-black fw-bold">WindowsMediaPlayer</h5>
+                            <p class="card-text">
+                                A console app of a WindowsMediaPlayer.
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex">
+                            <a href="#modalMediaPlayer" data-bs-toggle="modal"><i class="icon fa-solid fa-expand"></i></a>
+
+                            <a href="https://github.com/E-Verkimpe/Project-MusicPlayer-Eliano-Verkimpe" target="_blank"><i class="icon fa-brands fa-github"></i></a>    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pb-3">
+                    <div class="card card-custom rounded">
+                        <img class="card-img-top rounded-top" src="/assets/img/milkyway.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-black fw-bold">Coming soon</h5>
+                            <p class="card-text"></p>
+                        </div>
+                        <div class="card-footer d-flex flex-wrap">
+                            <a href="#modal3" data-bs-toggle="modal"><i class="icon fa-solid fa-expand"></i></a>
+
+                            <a href="" target="_blank"><i class="icon fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal1 -->
+    <div class="modal fade" id="modaltxt2graph" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">txt2graph</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="/assets/txt2graph/Screenshot_1.png" alt="ing-project1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal2 -->
+    <div class="modal fade" id="modalMediaPlayer" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">WindowsMediaPlayer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="/assets/windowsmediaplayer/Screenshot_2.png" alt="ing-project1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="/assets/img/milkyway.png" alt="ing-project1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact-->
+    <section class="signup-section" id="form">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">Contact me!</h2>
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form class="form-signup" id="contactForm" ACTION="https://jkorpela.fi/cgi-bin/echo.cgi"
+                    METHOD="POST">
+
+                        <!-- message input-->
+                        <div class="row">
+                            <div class="col">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                                    placeholder="Enter message..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- name input-->
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter first name...">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter last name...">
+                            </div>
+                        </div>
+
+                        <!-- Email address input-->
+                        <div class="row pb-5 input-group-newsletter">
+                            <div class="col-12 col-md"><input class="form-control" id="emailAddress" type="email"
+                                    placeholder="Enter email address..." aria-label="Enter email address..."
+                                    data-sb-validations="required,email" /></div>
+                            <div class="col-12 col-md-auto"><button class="btn btn-primary disabled" id="submitButton"
+                                    type="submit">Notify Me!</button></div>
+                        </div>
+
+
+                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is
+                            required.</div>
+                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3 mt-2 text-white">
+                                <div class="fw-bolder">Form submission successful!</div>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3 mt-2">Error sending message!</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Address</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">9160 Lokeren</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50"><a href="#!">eliano.verkimpe@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">04 79 31 65 10</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <a href="https://www.linkedin.com/in/eliano-verkimpe-617844242/" target="_blank"><i class="icon fa-brands fa-linkedin"></i></a>
+
+                <a href="https://github.com/E-Verkimpe" target="_blank"><i class="icon fa-brands fa-github"></i></a>
+
+                <a href="/assets/CV.pdf" target="_blank"><i class="icon fa-solid fa-file-pdf"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">Copyright &copy; E.V. 2022</div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
